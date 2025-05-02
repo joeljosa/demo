@@ -27,3 +27,6 @@ spec:
           limits:
             cpu: "200m"
             memory: "256Mi"
+      nodeSelector:  
+        eks.amazonaws.com/nodegroup: ng-application
+      
