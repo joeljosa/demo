@@ -14,9 +14,11 @@ spec:
       labels:
         app: hello-world
     spec:
+      nodeSelector:
+        node-group: ng-application
       containers:
       - name: hello-world-container
-        image: your-dockerhub/hello-world-app:latest
+        image: 569420519960.dkr.ecr.us-west-2.amazonaws.com/demo-app:34
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
