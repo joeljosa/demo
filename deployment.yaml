@@ -15,7 +15,7 @@ spec:
         app: hello-world
     spec:
       nodeSelector:
-        node-group: ng-application
+        kubernetes.io/hostname: ng-application
       containers:
       - name: hello-world-container
         image: 569420519960.dkr.ecr.us-west-2.amazonaws.com/demo-app:34
