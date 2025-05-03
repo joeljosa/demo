@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world-container
-        image: 569420519960.dkr.ecr.us-west-2.amazonaws.com/demo-app:latest
+        image: 569420519960.dkr.ecr.us-west-2.amazonaws.com/demo-app:53
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
