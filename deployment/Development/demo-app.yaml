@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-world
 spec:
-  replicas: 3
+  replicas: 30
   selector:
     matchLabels:
       app: hello-world
@@ -22,11 +22,11 @@ spec:
         - containerPort: 5000
         resources:
           requests:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "1000m"
+            memory: "1280Mi"
           limits:
-            cpu: "200m"
-            memory: "256Mi"
+            cpu: "2000m"
+            memory: "2560Mi"
       nodeSelector:  
         eks.amazonaws.com/nodegroup: ng-application
       
