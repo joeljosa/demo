@@ -22,11 +22,11 @@ spec:
         - containerPort: 5000
         resources:
           requests:
-            cpu: "1000m"
-            memory: "1280Mi"
+            cpu: "100m"
+            memory: "128Mi"
           limits:
-            cpu: "2000m"
-            memory: "2560Mi"
+            cpu: "200m"
+            memory: "256Mi"
       nodeSelector:  
         eks.amazonaws.com/nodegroup: ng-application
       
