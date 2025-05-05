@@ -23,10 +23,10 @@ spec:
         resources:
           requests:
             cpu: "100m"
-            memory: "128Mi"
+            memory: "1280Mi"
           limits:
             cpu: "200m"
-            memory: "256Mi"
+            memory: "2560Mi"
       nodeSelector:  
         eks.amazonaws.com/nodegroup: ng-application
       
